@@ -2,7 +2,19 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Llanuces - Inicio</title>
+    <meta name="title" content="Llanuces - Inicio">
+    <meta name="description" content="¡Bienvenidos a la web no oficial del pueblo de Llanuces, en Quirós! En esta web obtendrás información y datos curiosos sobre el pueblo, además de ...">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://llanuces.mateag.com">
+    <meta property="og:title" content="Llanuces - Inicio">
+    <meta property="og:description" content="¡Bienvenidos a la web no oficial del pueblo de Llanuces, en Quirós! En esta web obtendrás información y datos curiosos sobre el pueblo, además de ...">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://llanuces.mateag.com">
+    <meta property="twitter:title" content="Llanuces - Inicio">
+    <meta property="twitter:description" content="¡Bienvenidos a la web no oficial del pueblo de Llanuces, en Quirós! En esta web obtendrás información y datos curiosos sobre el pueblo, además de ...">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/e/e0/Escudoquiros.png">
     <style>
@@ -25,10 +37,10 @@
             margin: 0 auto;
         }
         h1 {
-            color: blue;
+            color: red;
             font-family: Calibri, sans-serif;
             margin: 20px 0 10px;
-            animation: blink 0.5s step-end infinite;
+            animation: blink 1s step-end infinite;
         }
         @keyframes blink {
             50% {
@@ -49,12 +61,16 @@
         <p>Estamos terminando esta web. ¡Sed pacientes!<br>- <a href="https://mateag.com" target="_blank">MateAG</a></p>
     </div>
     <script>
-        const t = ["Llanuces - Inicio", "Llanuces - Inicio (PROXIMAMENTE)"];
+        const t = ["Llanuces - Inicio", "Llanuces - Proximamente"];
         let i = 0;
         setInterval(() => {
             i = (i + 1) % t.length;
             document.title = t[i];
         }, 1000);
     </script>
+
+    <noscript>
+        <meta http-equiv="refresh" content="https://mateag.com/nojavascript" />
+    </noscript>
 </body>
 </html>
