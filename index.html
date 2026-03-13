@@ -28,6 +28,12 @@
             color: blue;
             font-family: Calibri, sans-serif;
             margin: 20px 0 10px;
+            animation: blink 0.5s step-end infinite;
+        }
+        @keyframes blink {
+            50% {
+                visibility: hidden;
+            }
         }
         p {
             font-family: Calibri, sans-serif;
@@ -42,5 +48,13 @@
         <h1>¡Proximamente!</h1>
         <p>Estamos terminando esta web. ¡Sed pacientes!<br>- <a href="https://mateag.com" target="_blank">MateAG</a></p>
     </div>
+    <script>
+        const t = ["Llanuces - Inicio", "Próximamente", "MateAG"];
+        let i = 0;
+        setInterval(() => {
+            i = (i + 1) % t.length;
+            document.title = t[i];
+        }, 1000);
+    </script>
 </body>
 </html>
